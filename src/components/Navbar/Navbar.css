@@ -1,0 +1,192 @@
+nav{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 200;
+    position: fixed;
+    left: 50%;
+    top: 1%;
+    transform: translateX(-50%);
+    height: 96px;
+    width: 100%;
+    max-width: 75%;
+    flex-direction: row;
+    border-bottom: #ffffff 2.5px  solid;
+    min-width: 740px;
+}
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #f7f7f7;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.nav-link{
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    font-family: 'Outfit';
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.nav-link:hover{
+    color: #b4b4b4;
+}
+
+.nav-logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Outfit';
+    cursor: pointer;
+}
+.right-element{
+    display:flex;
+    justify-content: flex-end;
+    width: 170px;
+    max-width: 170px;
+}
+
+.contactlinkcontainer{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    
+    .contactlink{
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 8px;
+        padding-right: 8px;
+        background-color: #ffffff;
+        border-radius: 18px;
+    }
+    .chat{
+        opacity: 0;
+        padding-top: 1px;
+        z-index: 200;
+    }
+}
+.contactlinkcontainer:hover{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: opacity;
+    transform: translateX(9px);
+    transition-timing-function: ease-out;
+    transition-duration: 100ms;
+
+    -ms-transition:opacity;
+    -ms-transform: translateX(9px);
+    -ms-transition-timing-function: ease-out;
+    -ms-transition-duration: 100ms;
+
+    -moz-transition:opacity;
+    -moz-transform: translateX(9px);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 100ms;
+
+    -webkit-transition: opacity;
+    -webkit-transform: translateX(9px);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 100ms;
+    .contactlink{
+        background-color: transparent;
+        color:#ffffff;
+    };
+    
+    .chat{
+        opacity:1;
+        z-index: 200;
+        padding-top: 1px;
+        transition: all 0.4s ease-in;
+    }
+    
+}
+.contactlink{
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Outfit';
+    color: #000;
+    text-transform: uppercase;
+    font-size: 16px;
+};
+
+@media only screen and (max-width: 800px) {
+    .scrollerClass {
+        display:none
+    }
+    nav {
+        position: fixed;
+        width: 100vw;
+        max-width: 540px;
+    }
+    .nav-menu {
+        z-index: 99;
+        position: fixed;
+        left: +150%;
+        top: 5rem;
+        flex-direction: column;
+        justify-content:space-around;
+        background-color: #222222;
+        width: 100%;
+        height: 90vh;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.5s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    .nav-logo {
+        font-size: 3.6vh;
+        font-weight: 500;
+        color: #ffffff;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-link {
+        font-size: 2vh;
+    }
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+}
+.studios-logo{
+    color: white;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+.now-logo{
+    color: white;
+    font-weight: 500;
+    letter-spacing: -3px;
+}
